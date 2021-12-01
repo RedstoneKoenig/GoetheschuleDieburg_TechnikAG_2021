@@ -1,0 +1,183 @@
+.invivible {
+    color: #f9ffaa;
+    color: #d1d1d1
+}
+
+html {
+    background-color: #f9ffaa;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #f9ffaa;
+    font-family: 'Source Sans Pro', sans-serif;
+    animation: 500ms all;
+}
+
+
+header {
+    background-color: #f2ff38;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.header {
+    background-color: #f2ff38;
+    padding-left: 10px;
+    color: #0011ff;
+    box-shadow: 100px;
+}
+
+
+nav {
+    width: 100%;
+    background-color: #f2ff38;
+    color:#FFFFFF;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    right: 30%;
+  }
+  
+  nav li{
+    display: inline;
+  }
+  
+  nav a:hover {
+    background: #0084ff;
+    color:#f2ff38;
+  }
+  
+
+  nav a {
+    padding: 10px 10px 10px 10px;
+    color:#0084ff;
+    text-decoration: none;
+    width: auto;
+    line-height:  8.0em;
+  }
+  #aktuell {
+      background-color: #0044ff;
+      color:#f2ff38;
+  }
+  #aktuell :hover {
+    background-color: #0084ff;
+    color:#f2ff38;
+}
+
+@media screen and (min-width: 1500px) {
+  html {
+    font-size: 175%;
+  }
+  nav a {
+    padding: 17,5px 17,5px 17,5px 17,5px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 150%;
+  }
+  nav a {
+    padding: 15px 15px 15px 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 75%;
+  }
+  nav a {
+    padding: 7,5px 7,5px 7,5px 7,5px;
+  }
+}
+@media screen and (max-width: 580px) {
+  html {
+    font-size: 70%;
+  }
+  nav a {
+    padding: 7px 7px 7px 7px;
+  }
+}
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 60%;
+  }
+  nav a {
+    padding: 6px 6px 6px 6px;
+  }
+}
+@media screen and (max-width: 510px) {
+  html {
+    font-size: 50%;
+  }
+  nav a {
+    padding: 5px 5px 5px 5px;
+  }
+}
+@media screen and (max-width: 410px) {
+  html {
+    font-size: 40%;
+  }
+  nav a {
+    padding: 4px 4px 4px 4px;
+  }
+}
+@media screen and (max-width: 355px) {
+  html {
+    font-size: 35%;
+  }
+  nav a {
+    padding: 3,5px 3,5px 3,5px 3,5px;
+  }
+}
+
+
+body {
+  color: #0044ff;
+  text-decoration: none;
+}
+.text {
+  color: #0044ff;
+  text-decoration: none;
+}
+
+.projetcs_1 {
+  text-align: right;
+  font-weight: normal;
+}
+
+.projetcs_2 {
+  text-align: left;
+}
+
+
+footer {
+  color: #007924;
+  background: rgba(9, 255, 0, 0.24);
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+footer a {
+  color: #007924;
+  background: rgba(9, 255, 0, 0.24);
+  padding-left: 1px;
+  padding-bottom: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  text-decoration: none;
+}
+
+#gmaps {
+  width: 100%;
+}
+
+#eastereggred_only {
+  visibility: hidden;
+}

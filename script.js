@@ -1,0 +1,1 @@
+if title == 1 {document.getElementById('headline_text').innerHTML = 'Technik<br>AG (:'; title = 0;} else {document.getElementById('headline_text').innerHTML = 'Technik<br>AG';title = 0;}

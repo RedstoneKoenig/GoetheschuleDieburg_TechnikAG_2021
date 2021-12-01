@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Quiz</title>
+    <script>
+        function firstFunction() {
+            var points = 0;
+            var Question = 0;
+            var Question1;
+            var Question2;
+            var Question3;
+            var Question4;
+            var Question5;
+            var Question6;
+            var Question7;
+            var Question8;
+            var Question9;
+            var Question10;
+            var q1;
+            var q2;
+            var q3;
+            var q4;
+            var q5;
+            var q6;
+            var q7;
+            var q8;
+            var q9;
+            var q10;
+            q1 = prompt("Ein Bauer hat 15 Schafe. Alle laufen in den Wald außer 9. Wie viele Schafe stehen noch auf der Weide?");
+            Question = Question + 1;
+            if (q1 == "9" || q1 == 9) {
+                points = points + 1
+                Question1 = true
+            }else {
+                Question1 = false
+            }
+            q2 = prompt("Teile 30 durch 1/2 und zähle 10 dazu. Was kommt raus?");
+            Question = Question + 1;
+            if (q2 == "70" || q2 == 70) {
+                points = points + 1
+                Question2 = true
+            }else {
+                Question2 = false
+            }
+            q3 = prompt("Welcher Berg war vor Entdeckung des Mount Everest der höchste Berg?");
+            Question = Question + 1;
+            if (q3 == "Mount Everest" || q3 == "Der Mount Everest" || q3 == "der Mount Everest") {
+                points = points + 1
+                Question3 = true
+            }else {
+                Question3 = false
+            }
+            q4 = prompt("Wie viele Haare hat eine Glatze, wenn eine Halbglatze nur noch 10.000 Haare hat?");
+            Question = Question + 1;
+            if (q4 == "0" || q4 == 0 || q3 == "Keine" || q3 == "keine") {
+                points = points + 1
+                Question4 = true
+            }else {
+                Question4 = false
+            }
+            q5 = prompt("Während eines Halbmarathons überholt Tom Peter, der auf dem zweiten Platz war. Auf welchem Platz ist Tom jetzt?");
+            Question = Question + 1;
+            if (q5 == "2." || q5 == 2 || q5 == "2" || q5 == "zweiter" || q5 == "Zweiter") {
+                points = points + 1
+                Question5 = true
+            }else {
+                Question5 = false
+            }
+            q6 = prompt("Ein Ball und ein Schläger kosten zusammen 1,10 Euro. Der Schläger ist 1 Euro teurer als der Ball. Was kostet der Schläger? ('euro,cent €' BEISPIEL: '9,99 €')");
+            Question = Question + 1;
+            if (q6 == "1,05 €") {
+                points = points + 1
+                Question6 = true
+            }else {
+                Question6 = false
+            }
+            q7 = prompt("Berlin schreibt man vorne mit B und hinten mit h. Stimmt das? (Ja/Nein)");
+            Question = Question + 1;
+            if (q7 == "Ja") {
+                points = points + 1
+                Question7 = true
+            }else {
+                Question7 = false
+            }
+            q8 = prompt("In einem See schwimmt ein Seerosen-Teppich. Jeden Tag verdoppelt sich seine Fläche. Wenn es 48 Tage dauert, bis der Seerosen-Teppich den gesamten See bedeckt, wie lange dauert es, bis die Hälfte des Sees bedeckt ist? (__ Tage)");
+            Question = Question + 1;
+            if (q8 == "47" || q8 == 47) { 
+                points = points + 1
+                Question8 = true
+            }else {
+                Question8 = false
+            }
+            q9 = prompt("Welche Maus läuft auf 2 Beinen?");
+            Question = Question + 1;
+            if (q9 == "Micky Mouse" || q9 == "Jerry") {
+                points = points + 1
+                Question9 = true
+            }else {
+                Question9 = false
+            }
+            q10 = prompt("Welche Ente läuft auf 2 Beinen?");
+            Question = Question + 1;
+            if (q10 == "Alle" || q10 == "alle" || q10 == "Jede" || q10 == "jede") {
+                points = points + 1
+                Question10 = true
+            }else {
+                Question10 = false
+            }
+            document.getElementById("test").innerHTML = "Punkte: " + points + " / " + Question;
+            
+            document.getElementById("q1").innerHTML = q1;
+            document.getElementById("q2").innerHTML = q2;
+            document.getElementById("q3").innerHTML = q3;
+            document.getElementById("q4").innerHTML = q4;
+            document.getElementById("q5").innerHTML = q5;
+            document.getElementById("q6").innerHTML = q6;
+            document.getElementById("q7").innerHTML = q7;
+            document.getElementById("q8").innerHTML = q8;
+            document.getElementById("q9").innerHTML = q9;
+            document.getElementById("q10").innerHTML = q10;
+
+            document.getElementById("show_answers").innerHTML = "#answers {display: normal;}"
+        }
+        
+    </script>
+    <style id="show_answers">
+        #answers {
+            display: none;
+        }
+    </style>
+    <style>
+        html {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 30px;
+            background-color: springgreen;
+            color: rgb(0, 140, 255);
+            text-align: center;
+        }
+        h1 {
+            font-size: 55px;
+        }
+    </style>
+</head>
+<body>
+    <h1 onclick="firstFunction();">Quiz-App</h1>
+    <p>Klicke auf den Titel um das Quiz zu starten!</p> <br>
+    <p>HINWEIS:<br>Am Ende der Antwort <b>kein Leerzeichen</b> lassen</p> <br> <br> <br> <br>
+    
+    <div id="answers">
+        <p>Scrolle um dein Ergebnis zu sehen</p> <br> <br> <br> <br> <br> <br> <br> <br>
+        <p id="test"></p>
+        <h2>Lösungen:</h2>
+        <h3>Frage 1:</h3>
+        <p>Deine Antwort: <span id="q1"></span></p>
+        <p>Richtige Antwort: 9 <br>Die Antwort steht schon oben in der Erläuterung der Frage. Wenn alle außer 9 Schafe in den Wald laufen, dann bleiben genau diese 9 Schafe auf der Weide. Eigentlich ganz einfach, oder?</p>
+        
+        <h3>Frage 2:</h3>
+        <p>Deine Antwort: <span id="q2"></span></p>
+        <p>Richtige Antwort: 70 <br>Wer diese Idiotentest-Frage nur flüchtig liest, begeht schnell den Fehler und teilt 30 durch 2. Richtig wäre: 30:1/2. Und das ergibt natürlich 60. Dazu addierst du 10 und schon hast du mit 70 das richtige Ergebnis!</p>
+        
+        <h3>Frage 3:</h3>
+        <p>Deine Antwort: <span id="q3"></span></p>
+        <p>Richtige Antwort: Der Mount Everest <br>Der Mount Everest natürlich! Denn egal ob schon entdeckt oder noch unbekannt - die Höhe des Bergs bleibt gleich.</p>
+        
+        <h3>Frage 4:</h3>
+        <p>Deine Antwort: <span id="q4"></span></p>
+        <p>Richtige Antwort: 0 <br>Wer eine Glatze hat, hat überhaupt keine Haare mehr. Ist doch klar!</p>
+        
+        <h3>Frage 5:</h3>
+        <p>Deine Antwort: <span id="q5"></span></p>
+        <p>Richtige Antwort: 2. <br>Tom überholt den Zweitplatzierten, das bedeutet, dass er jetzt auf dem zweiten Platz ist. Um auf Platz 1 zu landen, müsste er den Läufer auf Rang 1 überholen.</p>
+        
+        <h3>Frage 6:</h3>
+        <p>Deine Antwort: <span id="q6"></span></p>
+        <p>Richtige Antwort: 1,05 € <br>Diese Idiotentest-Frage ist tricky. Am besten fängst du die Überlegung mit dem Ball an. Was müsste er kosten, dass der um 1 Euro teurere Schläger und der Ball zusammen 1,10 Euro kosten? Zuerst mag einem 10 Cent in den Kopf kommen, doch das kann nicht sein. Denn wenn der Ball 10 Cent kosten würde, würde der Schläger 1,10 Euro kosten und zusammen wäre beides dann 1,20 Euro teuer. Der Ball muss also günstiger sein. Das Ergebnis: Der Ball kostet 5 Cent und der Schläger damit 1,05 Euro! Somit ist der Schläger 1 Euro teurer als der Ball und zusammen kostet beides 1,10 Euro.</p>
+        
+        <h3>Frage 7:</h3>
+        <p>Deine Antwort: <span id="q7"></span></p>
+        <p>Richtige Antwort: Ja <br>Warum ist die richtige Antwort "Ja"? Weil die Frage etwas gemein ist. Sie bezieht sich auf das Wort "Berlin" und das Wort "hinten". "Berlin" schreibt man vorne mit "B" und "hinten" schreibt man vorne mit "H".</p>
+        
+        <h3>Frage 8:</h3>
+        <p>Deine Antwort: <span id="q8"></span></p>
+        <p>Richtige Antwort: 47 <br>Bevor du anfängst groß zu rechnen, les dir noch mal die Frage genau durch. Jeden Tag verdoppelt sich die Fläche. Das heißt zwischen der halben Fläche und der ganzen Fläche kann nur ein einziger Tag liegen. Die richtige Antwort auf diese Idiotentest-Frage ist demnach: 47 Tage.</p>
+        
+        <h3>Frage 9:</h3>
+        <p>Deine Antwort: <span id="q9"></span></p>
+        <p>Richtige Antwort: Micky Mouse <br>Die Antwort auf diese Scherzfrage ist natürlich Micky Mouse.</p>
+        
+        <h3>Frage 10:</h3>
+        <p>Deine Antwort: <span id="q10"></span></p>
+        <p>Richtige Antwort: Jede <br>Achtung, diese Frage zielt auf deine Konzentrationsfähigkeit ab. Wenn du nicht nachdenkst, wirst du fast automatisch "Donald Duck" antworten. Zum einen, weil du ihn auf dem Bild siehst und zum anderen, weil du an die vorherige, ganz ähnliche Frage denkst. Aber lass dich nicht verwirren! Die richtige Antwort ist natürlich: Alle Enten laufen auf zwei Beinen.</p>
+    </div>
+</body>
+<footer>
+</footer>
+</html>
