@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://webentwicklung.ulrichbangert.de/thread363-swipe-images-2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Swipe Demo</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #00000090;
+        }
+
+        #img-container {
+            width: 100%;
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+
+        #img-container img {
+            width: calc(100vmin - 20px);
+            height: calc(100vmin - 20px);
+            object-fit: contain;
+            min-height: 1px;
+            flex: 0 0 100%;
+            scroll-snap-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="img-container">
+        <img src="./Swipe Demo_files/bild1.jpg">
+        <img src="./Swipe Demo_files/bild2.jpg">
+        <img src="./Swipe Demo_files/bild3.jpg">
+        <img src="./Swipe Demo_files/bild4.jpg">
+        <img src="./Swipe Demo_files/bild5.jpg">
+        <img src="./Swipe Demo_files/buddenbrookhaus_01.jpg">
+        <img src="./Swipe Demo_files/burgtor_01.jpg">
+    </div>
+
+
+</body></html>

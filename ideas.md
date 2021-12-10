@@ -1,0 +1,4 @@
+- [-] Projekte der gesammten AG vorstellen
+- [-] Bilder hinzufügen
+- [-] Geschichte der Goetheschule 
+- [-] Quiz zu der Geschichte von Goetheschule 
